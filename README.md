@@ -10,5 +10,6 @@ points = np.random.random([number_of_points,2]); where number_of_points is selec
 2) The second line generates the voronoi tesselations by calculating each voronoi cell coordinates along with each voronoi cell area
 voronoi_areas, voronoi_cells =  find_voronoi(points)  
 
-3) The third line calculates the area_threshold based on the area of all individual voronoi cells (for this example area_threshold = 40th percentile, i.e., voronoi cells with areas bigger than area_threshold will be discarded from the clustering analysis):
-area_threshold = np.percentile(voronoi_areas,area_threshold) 
+3) The third line calculates the area_threshold based on the area of all individual voronoi cells (for this example area_threshold = 40th percentile, i.e., voronoi cells with areas bigger than area_threshold will be discarded from the clustering analysis): area_threshold = np.percentile(voronoi_areas,area_threshold) 
+
+4) Rest of the code finds the connected voronoi cells filters out any cluster with less than min_number_of_localizations number of voronoi cells (In this example min_number_of_localizations is selected to be 10, i.e., there are no clusters with total number of cells smaller than 10).
