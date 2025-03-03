@@ -1,5 +1,4 @@
-# Voronoi_Clustering_Python
-
+# Clustering using Voronoi Tessellations
 This code generates clusters of point-pattern data using Voronoi tessellations in super-resolution microscopy. It follows the methodology described in this article: https://www.nature.com/articles/srep24084
 
 To see the implementation in action, run the Python script "voronoi_clustering.py", which demonstrates the method.
