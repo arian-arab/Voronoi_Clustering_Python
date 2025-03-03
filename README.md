@@ -7,7 +7,8 @@ To see the implementation in action, run the Python script "voronoi_clustering.p
 The key steps are as follows:
 
 **1) Generate Random Points:**
-The first line creates a set of randomly scattered points in 2D space:points = np.random.random([number_of_points,2]).
+The first line creates a set of randomly scattered points in 2D space:
+points = np.random.random([number_of_points,2]).
 Here, number_of_points is set to 1000 as an example.
 
 **2) Compute Voronoi Tessellations:**
